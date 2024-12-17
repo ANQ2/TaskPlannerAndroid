@@ -1,0 +1,7 @@
+package com.example.taskplanner.data
+
+enum class TaskFilter {
+    ALL,       // Показать все задачи
+    COMPLETED, // Показать только выполненные задачи
+    PENDING    // Показать только невыполненные задачи
+}
