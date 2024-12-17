@@ -1,0 +1,13 @@
+package com.example.taskplanner.navigation
+
+// Sealed class для хранения маршрутов навигации
+sealed class Screens(val route: String) {
+    object StartScreen : Screens("start")
+    object Login : Screens("login")
+    object Register : Screens("register")
+    object TaskList : Screens("taskList")
+    object AddTask : Screens("addTask")
+    object EditTask : Screens("editTask/{taskId}") {
+        fun createRoute(taskId: String) = "editTask/$taskId"
+    }
+}
