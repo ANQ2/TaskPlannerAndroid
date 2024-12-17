@@ -1,4 +1,4 @@
-package com.example.taskplanner.ui  // Убедитесь, что это соответствует пути файла
+package com.example.taskplanner.ui 
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
